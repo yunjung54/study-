@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',blog.views.home,name='home'),
     path('blog/<int:blog_id>/',blog.views.detail,name='detail'),
+    path('blog/new/',blog.views.new,name="new"),
+    path('blog/create/',blog.views.create,name='create'),#블로그라는 앱에서 뷰라는 곳에서 크리에이트라는함수를 쓰겟다
 ]
